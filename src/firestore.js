@@ -1,14 +1,9 @@
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  admin,
-} from "firebase/firestore/lite";
+import { getFirestore, collection, addDoc } from "firebase/firestore/lite";
 import { getAnalytics } from "firebase/analytics";
 
 export const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE,
+  apiKey: "AIzaSyAXCFz1I-SsgAd7KHUca3SzCrkcXdjYlCc",
   authDomain: "peachbutterprints-916e8.firebaseapp.com",
   projectId: "peachbutterprints-916e8",
   storageBucket: "peachbutterprints-916e8.appspot.com",
@@ -30,18 +25,16 @@ export const postContact = async (data) => {
 };
 
 export const sendEmail = async (data) => {
-  admin
-    .firestore()
-    .collection("mail")
-    .add({
-      to: "peachbutterprints@gmail.com",
-      from: data.email,
-      message: {
-        subject: "Message from " + data.name,
-        text: data.message,
-      },
-    })
-    .catch((err) => {
-      console.warn(err);
-    });
+  const mailCol = collection(db, "mail");
+
+  addDoc(mailCol, {
+    to: "peachbutterprints@gmail.com",
+    from: data.email,
+    message: {
+      subject: "Message from " + data.name,
+      text: data.message,
+    },
+  }).catch((err) => {
+    console.warn(err);
+  });
 };

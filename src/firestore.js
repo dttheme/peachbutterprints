@@ -26,13 +26,13 @@ export const postContact = async (data) => {
 
 export const sendEmail = async (data) => {
   const mailCol = collection(db, "mail");
-
+  console.log(data);
   addDoc(mailCol, {
     to: "peachbutterprints@gmail.com",
     from: data.email,
     message: {
       subject: "Message from " + data.name,
-      text: data.message,
+      text: "Message: " + data.message + " Email: " + data.email,
     },
   }).catch((err) => {
     console.warn(err);

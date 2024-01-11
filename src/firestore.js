@@ -31,6 +31,7 @@ getContacts().then((results)=> {
 export async function postContact (data) {
 
     const contactCol = collection(db, 'contact');
+    
     addDoc(contactCol, data).then((resp)=> {
         console.log('success', resp)
     }).catch((err)=> {

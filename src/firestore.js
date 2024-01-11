@@ -6,16 +6,7 @@ import {
   admin,
 } from "firebase/firestore/lite";
 import { getAnalytics } from "firebase/analytics";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyAXCFz1I-SsgAd7KHUca3SzCrkcXdjYlCc",
-  authDomain: "peachbutterprints-916e8.firebaseapp.com",
-  projectId: "peachbutterprints-916e8",
-  storageBucket: "peachbutterprints-916e8.appspot.com",
-  messagingSenderId: "174667823567",
-  appId: "1:174667823567:web:642f773e6a19051ddb3aba",
-  measurementId: "G-3DBM2QNCC8",
-};
+import firebaseConfig from "../firebaseConfig";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

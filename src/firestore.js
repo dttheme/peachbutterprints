@@ -6,7 +6,7 @@ import {
   admin,
 } from "firebase/firestore/lite";
 import { getAnalytics } from "firebase/analytics";
-import firebaseConfig from "../firebaseConfig";
+import { firebaseConfig } from "../firebaseConfig.js";
 
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);

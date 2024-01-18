@@ -8,51 +8,61 @@ import Tumblr from "../svg/logo-tumblr.svg";
 
 export default () => (
   <div className="app-wrapper">
-    <Header>
-      <h1>Peach Butter Prints</h1>
-    </Header>
-    <Card>
-      <h2>
-        <b>About</b>
-      </h2>
-      <p>Artist and software engineer living in Atlanta</p>
-      <p>
-        <a href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit">
-          Commission Information
-        </a>
-      </p>
-      <p></p>
-    </Card>
-    <Card>
-      <Contact></Contact>
-    </Card>
-    <Card>
-      <h2>
-        <b>Socials</b>
-      </h2>
-      <div className="social">
-        <a
-          href="https://www.instagram.com/peachbutterprints/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={Instagram} alt="Instagram" />
-        </a>
-        <a
-          href="https://www.tiktok.com/@peachbutterprints"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={Tiktok} alt="Tiktok" />
-        </a>
-        <a
-          href="https://www.tumblr.com/peachbutterprints"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={Tumblr} alt="Tumblr" />
-        </a>
-      </div>
-    </Card>
+    <div className="content">
+      <Header>
+        <h1>Peach Butter Prints</h1>
+      </Header>
+      <Card>
+        <div className="social">
+          <a
+            href="https://www.instagram.com/peachbutterprints/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Instagram} alt="Instagram" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@peachbutterprints"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Tiktok} alt="Tiktok" />
+          </a>
+          <a
+            href="https://www.tumblr.com/peachbutterprints"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Tumblr} alt="Tumblr" />
+          </a>
+        </div>
+        <div className="links">
+          <p>
+            <b>
+              <a href="https://peachbutterprints.myshopify.com">Shopify</a>
+            </b>
+          </p>
+          <p>
+            <a href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit">
+              Commission Information
+            </a>
+          </p>
+        </div>
+      </Card>
+      <Card>
+        <h2>
+          <b>About</b>
+        </h2>
+        <p>Artist and software engineer living in Atlanta</p>
+      </Card>
+      <Card>
+        <Contact></Contact>
+        {/* <p>
+          I created this form using Firebase and React. Visit{" "}
+          <a href="https://dyannaturner.com">my personal site</a> for more
+          information about my career as an engineer.
+        </p> */}
+      </Card>
+    </div>
   </div>
 );

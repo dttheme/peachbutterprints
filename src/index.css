@@ -1,9 +1,18 @@
+body {
+  margin: 0;
+}
 .app-wrapper {
-  display: grid;
-  justify-content: center;
   font-family: "Courier New", Courier, monospace;
+  background-image: url("./img/19.png");
+  padding: 5px;
+  padding-top: 20px;
+}
+
+.content {
   max-width: 600px;
   margin: 0 auto;
+  display: grid;
+  justify-content: center;
 }
 
 a {
@@ -15,12 +24,18 @@ b {
 }
 
 .card {
-  border: 1px dotted lightgray;
+  border: 1px dotted #01161e;
   padding: 2em;
   margin: 0.5em 0;
+  background-color: #f1e6e6;
 }
 
 .header {
+  text-align: center;
+}
+
+.links {
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -31,7 +46,7 @@ b {
 }
 
 .social img {
-  max-width: 25px;
+  max-width: 30%;
 }
 
 .contact form {

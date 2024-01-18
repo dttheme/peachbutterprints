@@ -2,8 +2,11 @@ body {
   margin: 0;
 }
 .app-wrapper {
+  min-height: 100vh;
   font-family: "Courier New", Courier, monospace;
   background-image: url("./img/19.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5px;
   padding-top: 20px;
 }

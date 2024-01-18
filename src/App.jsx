@@ -39,11 +39,21 @@ export default () => (
         <div className="links">
           <p>
             <b>
-              <a href="https://peachbutterprints.myshopify.com">Shopify</a>
+              <a
+                href="https://peachbutterprints.myshopify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shopify
+              </a>
             </b>
           </p>
           <p>
-            <a href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit">
+            <a
+              href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Commission Information
             </a>
           </p>

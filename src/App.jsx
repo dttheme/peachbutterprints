@@ -6,6 +6,8 @@ import Instagram from "../svg/logo-instagram.svg";
 import Tiktok from "../svg/logo-tiktok.svg";
 import Tumblr from "../svg/logo-tumblr.svg";
 
+const year = new Date().getFullYear();
+
 export default () => (
   <div className="app-wrapper">
     <div className="content">
@@ -73,6 +75,17 @@ export default () => (
           information about my career as an engineer.
         </p> */}
       </Card>
+      <p className="credit">
+        @
+        <a
+          href="https://dyannaturner.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Dyanna Turner
+        </a>
+        , {year}
+      </p>
     </div>
   </div>
 );

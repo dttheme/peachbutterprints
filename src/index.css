@@ -72,3 +72,9 @@ b {
   padding: 5px;
   font-family: "Courier New", Courier, monospace;
 }
+
+.credit {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}

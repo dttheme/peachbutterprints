@@ -30,11 +30,11 @@ export default () => {
             <b>Contact</b>
           </h2>
           <div>
-            Interested in some custom art? Have questions? Please reach out
-            using the form below, or directly at{" "}
+            Please reach out using the form below, or directly at{" "}
             <a href="mailto:peachbutterprints@gmail.com">
               peachbutterprints@gmail.com
             </a>
+            .
           </div>
           <label htmlFor="">Name</label>
           <input

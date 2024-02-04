@@ -5,6 +5,7 @@ import { Header, Card, Contact } from "./components";
 import Instagram from "../svg/logo-instagram.svg";
 import Tiktok from "../svg/logo-tiktok.svg";
 import Tumblr from "../svg/logo-tumblr.svg";
+import faceGif from "./img/face.gif";
 
 const year = new Date().getFullYear();
 
@@ -65,15 +66,16 @@ export default () => (
         <h2>
           <b>About</b>
         </h2>
-        <p>Artist and software engineer living in Atlanta</p>
+        <div className="about-grid">
+          <img
+            src={faceGif}
+            alt="an animated gif of different emotive smiley faces"
+          />
+          <p>Artist and software engineer living in Atlanta</p>
+        </div>
       </Card>
       <Card>
         <Contact></Contact>
-        {/* <p>
-          I created this form using Firebase and React. Visit{" "}
-          <a href="https://dyannaturner.com">my personal site</a> for more
-          information about my career as an engineer.
-        </p> */}
       </Card>
       <p className="credit">
         @

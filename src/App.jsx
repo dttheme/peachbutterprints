@@ -39,28 +39,6 @@ export default () => (
             <img src={Tumblr} alt="Tumblr" />
           </a>
         </div>
-        <div className="links">
-          <p>
-            <b>
-              <a
-                href="https://peachbutterprints.myshopify.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Shopify
-              </a>
-            </b>
-          </p>
-          <p>
-            <a
-              href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Commission Information
-            </a>
-          </p>
-        </div>
       </Card>
       <Card>
         <h2>
@@ -71,7 +49,39 @@ export default () => (
             src={faceGif}
             alt="an animated gif of different emotive smiley faces"
           />
-          <p>Artist and software engineer living in Atlanta</p>
+          <div>
+            <p>Artist and software engineer living in Atlanta.</p>
+            <p>
+              Open for commission!{" "}
+              <a
+                href="https://docs.google.com/document/d/1dmfe2BDts62alUpMckay46v029QsjlLJsAFfA7VKP3A/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Commission Information
+              </a>
+            </p>
+
+            <p>
+              {" "}
+              Prints now available for sale on{" "}
+              <a
+                href="https://peachbutterprints.myshopify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Shopify
+              </a>
+            </p>
+            <script
+              type="text/javascript"
+              src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
+            ></script>
+            <script type="text/javascript">
+              kofiwidget2.init('Support Me on Ko-fi', 'A68E87',
+              'R6R4U053I');kofiwidget2.draw();
+            </script>
+          </div>
         </div>
       </Card>
       <Card>

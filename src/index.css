@@ -37,11 +37,6 @@ b {
   text-align: center;
 }
 
-.links {
-  margin-top: 40px;
-  text-align: center;
-}
-
 .social {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -82,7 +77,8 @@ b {
 .about-grid {
   display: grid;
   grid-template-columns: 20% 80%;
-  gap: 10px;
+  gap: 20px;
+  place-items: center;
 }
 
 .about-grid img {

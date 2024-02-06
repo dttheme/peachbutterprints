@@ -6,9 +6,19 @@ import Instagram from "../svg/logo-instagram.svg";
 import Tiktok from "../svg/logo-tiktok.svg";
 import Tumblr from "../svg/logo-tumblr.svg";
 import faceGif from "./img/face.gif";
+import KofiButton from "kofi-button";
 
 const year = new Date().getFullYear();
 
+const StyledKofiButton = () => {
+  return (
+    <KofiButton
+      color="#A68E87"
+      title="Buy me a cup of coffee?"
+      kofiID="R6R4U053I"
+    />
+  );
+};
 export default () => (
   <div className="app-wrapper">
     <div className="content">
@@ -73,15 +83,10 @@ export default () => (
                 Shopify
               </a>
             </p>
-            <script
-              type="text/javascript"
-              src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
-            ></script>
-            <script type="text/javascript">
-              kofiwidget2.init('Support Me on Ko-fi', 'A68E87',
-              'R6R4U053I');kofiwidget2.draw();
-            </script>
           </div>
+        </div>
+        <div className="kofi-wrapper">
+          <StyledKofiButton />
         </div>
       </Card>
       <Card>

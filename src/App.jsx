@@ -93,7 +93,7 @@ export default () => (
         <Contact></Contact>
       </Card>
       <p className="credit">
-        @
+        © {year},
         <a
           href="https://dyannaturner.com"
           target="_blank"
@@ -101,7 +101,7 @@ export default () => (
         >
           Dyanna Turner
         </a>
-        , {year}
+        ,
       </p>
     </div>
   </div>

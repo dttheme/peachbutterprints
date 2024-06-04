@@ -35,6 +35,21 @@ b {
 
 .header {
   text-align: center;
+  background-color: rgb(166, 142, 135, 70%);
+  border: 1px dotted #01161e;
+}
+nav {
+  /* background-color: #a68e87; */
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
 }
 
 .social {
@@ -44,7 +59,7 @@ b {
 }
 
 .social img {
-  max-width: 30%;
+  max-width: 40px;
 }
 
 .contact form {

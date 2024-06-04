@@ -15,7 +15,8 @@
     "firebase": "^10.7.1",
     "kofi-button": "^1.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "babel-preset-nano-react-app": "^0.1.0",

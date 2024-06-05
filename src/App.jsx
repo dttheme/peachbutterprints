@@ -29,16 +29,14 @@ export default () => (
             </nav>
           </div>
         </Header>
-        <Social></Social>
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/commission" element={<Commission />}></Route>
         </Routes>
       </Router>
-      {/* <Card>
-        <Contact></Contact>
-      </Card> */}
+      <Social></Social>
+
       <p className="credit">
         © {year},
         <a

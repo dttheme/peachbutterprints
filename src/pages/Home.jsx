@@ -1,18 +1,7 @@
-import React from "react";
 import Card from "../components/Card";
-
-const StyledKofiButton = () => {
-  return (
-    <KofiButton
-      color="#A68E87"
-      title="Buy me a cup of coffee?"
-      kofiID="R6R4U053I"
-    />
-  );
-};
-
-import faceGif from "../img/face.gif";
 import KofiButton from "kofi-button";
+import React from "react";
+import faceGif from "../img/face.gif";
 
 const Home = () => {
   return (
@@ -24,23 +13,13 @@ const Home = () => {
           alt="an animated gif of different emotive smiley faces"
         />
         <div>
-          <p>Artist and software engineer based in Atlanta.</p>
-
           <p>
-            {" "}
-            Prints now available for sale on{" "}
-            <a
-              href="https://peachbutterprints.myshopify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Shopify
-            </a>
+            Welcome to Peach Butter Prints! Offering one-of-a-kind linocut
+            prints and vibrant digital illustrations. Whether you're an art
+            lover, collector, or looking for a unique commission, explore my
+            gallery and add a splash of creativity to your life.
           </p>
         </div>
-      </div>
-      <div className="kofi-wrapper">
-        <StyledKofiButton />
       </div>
     </Card>
   );

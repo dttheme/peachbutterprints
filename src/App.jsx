@@ -1,12 +1,24 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-
 import "./index.css";
 import "./components";
-import { Header, Card, Contact, Social } from "./components";
-import { Home, About, Commission } from "./pages";
+
+import { About, Commission, Home } from "./pages";
+import { Footer, Header, Social } from "./components";
+import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
+import KofiButton from "kofi-button";
+import React from "react";
 
 const year = new Date().getFullYear();
+
+const StyledKofiButton = () => {
+  return (
+    <KofiButton
+      color="#A68E87"
+      title="Buy me a cup of coffee?"
+      kofiID="R6R4U053I"
+    />
+  );
+};
 
 export default () => (
   <div className="app-wrapper">
@@ -25,6 +37,15 @@ export default () => (
                 <li>
                   <Link to="/commission">Commission</Link>
                 </li>
+                <li>
+                  <a
+                    href="https://peachbutterprints.myshopify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Shop
+                  </a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -35,7 +56,12 @@ export default () => (
           <Route path="/commission" element={<Commission />}></Route>
         </Routes>
       </Router>
-      <Social></Social>
+      <Footer>
+        <Social></Social>
+        <div className="kofi-wrapper">
+          <StyledKofiButton />
+        </div>
+      </Footer>
 
       <p className="credit">
         © {year},

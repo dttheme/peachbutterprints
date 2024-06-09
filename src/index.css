@@ -30,7 +30,7 @@ b {
 .card {
   border: 1px dotted #01161e;
   padding: 2em;
-  margin: 0.5em 0;
+  margin-bottom: 0.5em;
   background-color: #f1e6e6;
 }
 
@@ -38,7 +38,15 @@ b {
   text-align: center;
   background-color: rgb(166, 142, 135, 70%);
   border: 1px dotted #01161e;
+  margin-bottom: 10px;
 }
+
+.footer {
+  background-color: rgb(166, 142, 135, 70%);
+  border: 1px dotted #01161e;
+  padding: 10px;
+}
+
 nav {
   /* background-color: #a68e87; */
   padding: 10px;
@@ -57,6 +65,7 @@ nav ul {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   text-align: center;
+  align-items: center;
 }
 
 .social img {
@@ -105,5 +114,5 @@ nav ul {
 
 .kofi-wrapper {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 10px;
 }

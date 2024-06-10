@@ -1,7 +1,7 @@
 import "./index.css";
 import "./components";
 
-import { About, Commission, Home } from "./pages";
+import { About, Commission, Home, Policies } from "./pages";
 import { Footer, Header, Social } from "./components";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
@@ -54,6 +54,7 @@ export default () => (
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/commission" element={<Commission />}></Route>
+          <Route path="/policies" element={<Policies />}></Route>
         </Routes>
       </Router>
       <Footer>

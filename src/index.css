@@ -1,3 +1,5 @@
+@import "../../peachbutterprints/node_modules/react-image-gallery/styles/css/image-gallery.css";
+
 body {
   margin: 0;
 }
@@ -17,6 +19,7 @@ body {
   margin: 0 auto;
   display: grid;
   justify-content: center;
+  color: #141414;
 }
 
 a {
@@ -44,14 +47,14 @@ b {
 .footer {
   background-color: rgb(166, 142, 135, 70%);
   border: 1px dotted #01161e;
-  padding: 10px;
+  padding: 20px;
 }
 
 nav {
   /* background-color: #a68e87; */
   padding: 10px;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 nav ul {
   display: flex;
@@ -114,5 +117,9 @@ nav ul {
 
 .kofi-wrapper {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.gallery-wrapper {
+  padding: 20px 0;
 }

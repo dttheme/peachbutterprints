@@ -1,8 +1,7 @@
-import Card from "./Card";
-import Instagram from "../../svg/logo-instagram.svg";
+import Instagram from "../img/svg/logo-instagram.svg";
 import React from "react";
-import Tiktok from "../../svg/logo-tiktok.svg";
-import Tumblr from "../../svg/logo-tumblr.svg";
+import Tiktok from "../img/svg/logo-tiktok.svg";
+import Tumblr from "../img/svg/logo-tumblr.svg";
 
 const Social = () => {
   return (

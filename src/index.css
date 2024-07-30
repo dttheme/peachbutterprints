@@ -123,3 +123,7 @@ nav ul {
 .gallery-wrapper {
   padding: 20px 0;
 }
+
+.loading-wrapper {
+  text-align: center;
+}

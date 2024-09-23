@@ -66,13 +66,13 @@ nav ul {
 
 .social {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 25% 25% 25% 25%;
   text-align: center;
   align-items: center;
 }
 
 .social img {
-  max-width: 40px;
+  max-width: 30px;
 }
 
 .contact form {

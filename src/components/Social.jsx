@@ -2,6 +2,7 @@ import Instagram from "../img/svg/logo-instagram.svg";
 import React from "react";
 import Tiktok from "../img/svg/logo-tiktok.svg";
 import Tumblr from "../img/svg/logo-tumblr.svg";
+import Twitch from "../img/svg/logo-twitch.svg";
 
 const Social = () => {
   return (
@@ -14,11 +15,11 @@ const Social = () => {
         <img src={Instagram} alt="Instagram" />
       </a>
       <a
-        href="https://www.tiktok.com/@peachbutterprints"
+        href="https://www.twitch.tv/peachbutterprints"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Tiktok} alt="Tiktok" />
+        <img src={Twitch} alt="Twitch" />
       </a>
       <a
         href="https://www.tumblr.com/peachbutterprints"
@@ -26,6 +27,13 @@ const Social = () => {
         rel="noopener noreferrer"
       >
         <img src={Tumblr} alt="Tumblr" />
+      </a>
+      <a
+        href="https://www.tiktok.com/@peachbutterprints"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={Tiktok} alt="Tiktok" />
       </a>
     </div>
   );

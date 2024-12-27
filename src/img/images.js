@@ -1,12 +1,12 @@
-import Three from "./gallery/3.png";
-import Six from "./gallery/6.png";
-import Thirteen from "./gallery/13.png";
-import Twenty from "./gallery/20.png";
-import TwentyTwo from "./gallery/22.png";
-import TwentyFive from "./gallery/25.png";
-import TwentySix from "./gallery/26.png";
-import TwentyEight from "./gallery/28.png";
-import Scottie from "./gallery/scottie.png";
+import Scottie from "/images/scottie.png";
+import Six from "/images/6.png";
+import Thirteen from "/images/13.png";
+import Three from "/images/3.png";
+import Twenty from "/images/20.png";
+import TwentyEight from "/images/28.png";
+import TwentyFive from "/images/25.png";
+import TwentySix from "/images/26.png";
+import TwentyTwo from "/images/22.png";
 
 export default [
   { original: Three, description: "Path 🗻" },

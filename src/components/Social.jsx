@@ -1,4 +1,5 @@
 import Instagram from "../img/svg/logo-instagram.svg";
+import Linktree from "../img/linktree.png";
 import React from "react";
 import Tiktok from "../img/svg/logo-tiktok.svg";
 import Tumblr from "../img/svg/logo-tumblr.svg";
@@ -14,6 +15,7 @@ const Social = () => {
       >
         <img src={Instagram} alt="Instagram" />
       </a>
+
       <a
         href="https://www.twitch.tv/peachbutterprints"
         target="_blank"
@@ -34,6 +36,13 @@ const Social = () => {
         rel="noopener noreferrer"
       >
         <img src={Tiktok} alt="Tiktok" />
+      </a>
+      <a
+        href="https://linktr.ee/peachbutterprints"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={Linktree} alt="Linktree" />
       </a>
     </div>
   );

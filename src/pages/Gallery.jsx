@@ -1,7 +1,7 @@
-import React from "react";
 import ImageGallery from "react-image-gallery";
-import images from "../img/images.js";
-import Loading from "../components/Loading.jsx";
+import Loading from "../components/Loading";
+import React from "react";
+import images from "../img/images";
 
 const Gallery = () => {
   return (

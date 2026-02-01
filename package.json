@@ -4,11 +4,12 @@
   "description": "",
   "license": "MIT",
   "type": "module",
-  "homepage": "https://www.peachbutterprints.com/",
+  "homepage": "peachbutterprints.dyannaturner.com",
   "scripts": {
     "start": "vite",
     "preview": "vite preview",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
@@ -21,7 +22,7 @@
   },
   "devDependencies": {
     "babel-preset-nano-react-app": "^0.1.0",
-    "gh-pages": "^6.1.0",
+    "gh-pages": "^6.3.0",
     "vite": "^4.3.8"
   },
   "babel": {

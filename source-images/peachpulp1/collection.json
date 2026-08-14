@@ -1,0 +1,18 @@
+{
+  "title": "Peach Pulp 1",
+  "displayWidth": 1080,
+  "unit": "page",
+  "order": [
+    "peachpulp_1.0",
+    "peachpulp_1.1",
+    "peachpulp_1.4",
+    "peachpulp_1.3",
+    "peachpulp_1.2",
+    "peachpulp_1.6",
+    "peachpulp_1.10",
+    "peachpulp_1.7",
+    "peachpulp_1.5",
+    "peachpulp_1.8",
+    "peachpulp_1.9"
+  ]
+}

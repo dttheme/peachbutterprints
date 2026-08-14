@@ -1,12 +1,16 @@
 import "./index.css";
 import "./components";
 
-import { About, Commission, Gallery, Home, Policies } from "./pages";
+import { About, Commission, Home, Policies } from "./pages";
 import { Footer, Header, Social } from "./components";
 import { Link, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import KofiButton from "kofi-button";
+import Loading from "./components/Loading";
 import React from "react";
+
+const GalleryIndex = React.lazy(() => import("./pages/GalleryIndex"));
+const GalleryCollection = React.lazy(() => import("./pages/GalleryCollection"));
 
 const year = new Date().getFullYear();
 
@@ -53,13 +57,19 @@ export default () => (
             </nav>
           </div>
         </Header>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="/commission" element={<Commission />}></Route>
-          <Route path="/policies" element={<Policies />}></Route>
-          <Route path="/gallery" element={<Gallery />}></Route>
-        </Routes>
+        <React.Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/about" element={<About />}></Route>
+            <Route path="/commission" element={<Commission />}></Route>
+            <Route path="/policies" element={<Policies />}></Route>
+            <Route path="/gallery" element={<GalleryIndex />}></Route>
+            <Route
+              path="/gallery/:slug"
+              element={<GalleryCollection />}
+            ></Route>
+          </Routes>
+        </React.Suspense>
       </Router>
       <Footer>
         <Social></Social>

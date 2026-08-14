@@ -1,12 +1,12 @@
-@import "../../peachbutterprints/node_modules/react-image-gallery/styles/css/image-gallery.css";
-
 body {
   margin: 0;
 }
 .app-wrapper {
   min-height: 100vh;
   font-family: "Courier New", Courier, monospace;
-  background-image: url("./img/19.png");
+  /* Dominant colour of 19.webp, so the page never flashes white beneath it. */
+  background-color: #a88888;
+  background-image: url("./img/19.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -14,12 +14,26 @@ body {
   padding-top: 20px;
 }
 
+/* A fixed background forces a repaint on every scroll frame, which is costly
+   on phones and unreliable in mobile Safari. */
+@media (max-width: 700px) {
+  .app-wrapper {
+    background-attachment: scroll;
+  }
+}
+
 .content {
   max-width: 600px;
   margin: 0 auto;
   display: grid;
-  justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
   color: #141414;
+}
+
+/* Grid items default to min-width: auto, so a wide image would push the whole
+   column past max-width and stretch the header and footer with it. */
+.content > * {
+  min-width: 0;
 }
 
 a {
@@ -122,6 +136,85 @@ nav ul {
 
 .gallery-wrapper {
   padding: 20px 0;
+}
+
+/* The width/height attributes on each image would otherwise be taken as a
+   literal pixel height; auto lets them act purely as an aspect ratio, so the
+   slot is the right size before the file arrives. */
+.image-gallery-slide .image-gallery-image,
+.image-gallery-thumbnail-image {
+  height: auto;
+}
+
+/* Stretching the 20px placeholder is what produces the blur. A tall page is
+   capped to the viewport by the gallery's own max-height, and the placeholder
+   fills the gutters either side, which reads as a deliberate backdrop. */
+.blur-image {
+  background-position: center;
+  background-size: cover;
+}
+
+.blur-image img {
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.blur-image img.is-loaded {
+  opacity: 1;
+}
+
+.image-gallery-thumbnail-inner {
+  background-color: #e0d3cd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blur-image img {
+    transition: none;
+  }
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.collection-card {
+  display: block;
+  padding: 10px;
+  border: 1px dotted #01161e;
+  background-color: #f1e6e6;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Covers are cropped square so collections of different shapes line up. */
+.collection-cover {
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+.collection-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-title {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.collection-count {
+  display: block;
+  font-size: 0.8em;
+}
+
+.collection-heading {
+  margin: 0 0 10px;
+  text-align: center;
 }
 
 .loading-wrapper {

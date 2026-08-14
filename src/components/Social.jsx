@@ -13,7 +13,7 @@ const Social = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Instagram} alt="Instagram" />
+        <img loading="lazy" src={Instagram} alt="Instagram" />
       </a>
 
       <a
@@ -21,28 +21,28 @@ const Social = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Twitch} alt="Twitch" />
+        <img loading="lazy" src={Twitch} alt="Twitch" />
       </a>
       <a
         href="https://www.tumblr.com/peachbutterprints"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Tumblr} alt="Tumblr" />
+        <img loading="lazy" src={Tumblr} alt="Tumblr" />
       </a>
       <a
         href="https://www.tiktok.com/@peachbutterprints"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Tiktok} alt="Tiktok" />
+        <img loading="lazy" src={Tiktok} alt="Tiktok" />
       </a>
       <a
         href="https://linktr.ee/peachbutterprints"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={Linktree} alt="Linktree" />
+        <img loading="lazy" src={Linktree} alt="Linktree" />
       </a>
     </div>
   );

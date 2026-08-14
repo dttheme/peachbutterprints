@@ -6,8 +6,11 @@
   "type": "module",
   "homepage": "peachbutterprints.dyannaturner.com",
   "scripts": {
+    "optimize-images": "node scripts/optimize-images.mjs",
+    "prestart": "npm run optimize-images",
     "start": "vite",
     "preview": "vite preview",
+    "prebuild": "npm run optimize-images",
     "build": "vite build",
     "deploy": "gh-pages -d dist"
   },
@@ -24,6 +27,7 @@
   "devDependencies": {
     "babel-preset-nano-react-app": "^0.1.0",
     "gh-pages": "^6.3.0",
+    "sharp": "^0.35.3",
     "vite": "^4.3.8"
   },
   "babel": {
